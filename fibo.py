@@ -10,10 +10,9 @@ def fibo(num):
     #    return num
     #else:
     #    return fibo(num-1) + fibo(num-2)
-
-    phi = (1 + sqrt(5)) / 2
-    phi2 = (1 - sqrt(5)) / 2
-    return round(pow(phi, num) - pow(phi2, num) / sqrt(5))
+    phi = (1 + sqrt(5))
+    phi2 = (1 - sqrt(5))
+    return round((pow(phi, num) - pow(phi2, num)) / (pow(2,num) * sqrt(5)))
 
 print(fibo(5))
 
